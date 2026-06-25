@@ -1,0 +1,15 @@
+
+- Anki
+- Practice Kana for 100 letters
+- Mine 1 new sentence
+- Read 1 page of a book
+- Speak 1 sentence from my mind in JP
+- Write 1 sentence with a new word learned from Anki
+- Listen to 1 (5 mins) podcast episode
+- (Optional) Look at the transcript and try to understand as much as possible
+- Make note for 1 grammar related concept
+- (Optional) Practice stroke orders for 2 minutes
+- (Optional) Watch 1 anime episode with Eng sub
+- (Optional) Watch 5 minutes of Japanese only content
+- (Optional) Go through 3 dialog boxes in a VN
+- (Optional) Go through 5 test questions

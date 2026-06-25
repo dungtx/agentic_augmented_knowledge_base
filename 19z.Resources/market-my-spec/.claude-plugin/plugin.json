@@ -1,0 +1,32 @@
+{
+  "name": "market-my-spec",
+  "version": "0.6.0",
+  "description": "Marketing for founders, in Claude Code. Four skills that work together: /marketing-strategy (guided 8-step strategy flow), /daily-plan (picks today's activities, manages your roster, scaffolds project-local skills), /marketing-stack (standalone infrastructure recipes: Reddit, Discord, Slack, Wix, Ghost, WordPress, Stripe, HubSpot, Postiz, Meta Ads, Facebook, Instagram, LinkedIn, Twitter/X, YouTube, Resend), /marketing-library (curated playbook plugins: marketingskills, claude-seo, anthropic-marketing, digital-marketing-pro). Stack and library co-write to marketing/infrastructure.md so daily-plan reads one source of truth.",
+  "author": {
+    "name": "CodeMySpec",
+    "url": "https://codemyspec.com"
+  },
+  "homepage": "https://github.com/Code-My-Spec/plugins",
+  "repository": "https://github.com/Code-My-Spec/plugins",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "strategy",
+    "positioning",
+    "customer-research",
+    "jtbd",
+    "daily-planner",
+    "mcp",
+    "infrastructure",
+    "seo",
+    "social-media",
+    "reddit",
+    "discord",
+    "slack",
+    "stripe",
+    "hubspot",
+    "wordpress",
+    "ghost",
+    "wix"
+  ]
+}

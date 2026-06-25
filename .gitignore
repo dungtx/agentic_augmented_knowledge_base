@@ -1,0 +1,12 @@
+# Local Pi runtime state
+.atl/
+
+# Obsidian machine-local state (changes constantly; not useful to track)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/.cache
+.obsidian/plugins/*/data.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
