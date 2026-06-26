@@ -36,15 +36,17 @@
 
 Per user instruction 2026-06-26: these were created by another agent in a parallel session and are that agent's responsibility to commit:
 - `11a.Capture/11a1.Inbox/202606261641-technical-interview-prep-playbook.md`
+- `11a.Capture/11a1.Inbox/202606261725-mudah-emergency-bid-context.md`
+- `11a.Capture/11a1.Inbox/202606261725-ai-engineer-candidate-rubric.md` (timestamp drift may exist; recheck at pickup time)
 - `11l.LtS/11l07.Career/` (new permanent-note lane)
 
-**Rule for any agent picking up:** if you see untracked files you didn't create, *ask the user before committing them*. Provenance discipline.
+**Rule for any agent picking up:** if you see untracked files you didn't create, *ask the user before committing them*. Provenance discipline (W14).
 
 ### 1.4 Git state
 
 - Remote: `git@github.com:dungtx/agentic_augmented_knowledge_base.git`, branch `main`, tracking `origin/main`.
 - Author config saved in repo: `user.name=dante`, `user.email=dungtx3@vmogroup.com`.
-- Last commit: `a5856be` "Enrich CDI fleeting note with clarification answers".
+- Last commit: `5a0b532` "Relabel Japanese Dailies as kind:task…".
 - Commit style: scoped subject + body explaining decisions. All commits so far authored as `dante`.
 
 ---
@@ -69,10 +71,11 @@ Per user instruction 2026-06-26: these were created by another agent in a parall
 | D14 | `morning-review` fires **consent-first**: only on trigger phrase OR explicit yes/no offer at session start. NEVER auto-hijacks. | Q6 |
 | D15 | Minimalist capture skill = NO morning-review, NO SRS, NO retrieval. Only: listen → clarify one-at-a-time w/ hints → write Inbox note → ask "another or done?" → exit. | Q6 |
 | D16 (new) | **Live mode** is the user's preferred capture variant — write directly without the question gate, batch clarification questions for the end. Currently NOT in the skill; user requested it be grilled as a possible branch. See task T4. | Observed 2026-06-26 |
+| D17 (new) | Frontmatter gains an orthogonal **`kind:`** field for classification (`idea` \| `task` \| `routine` \| `lit-note`), separate from **`status:`** (`fleeting` \| `distilled` \| `discarded`). `status` = where in the fleeting lifecycle; `kind` = what category the item is. Don't conflate — orthogonal axes. Applied 2026-06-26: `capture-fleeting` skill now emits `kind: idea` by default; triage/distill may reassign. | Locked 2026-06-26 (Inbox cleanup) |
 
 ### 2.1 B/C defaults accepted (no vetoes)
 
-B1 preview-then-write · B2 "another fragment, or done?" exit · B3 bundle if clearly one fragment, ask if ambiguous · B4 no `[[wikilinks]]` at capture (link at distill) · C1 frontmatter = `status`/`captured_at`/`tags`/`needs_review` · C2 filename `YYYYMMDDHHmm-slug.md` · C3 max 3 clarifying questions/fragment · N6 timezone `+07:00`.
+B1 preview-then-write · B2 "another fragment, or done?" exit · B3 bundle if clearly one fragment, ask if ambiguous · B4 no `[[wikilinks]]` at capture (link at distill) · C1 frontmatter = `status`/`captured_at`/`tags`/`needs_review` **+ `kind` (D17, added 2026-06-26; default `idea`)** · C2 filename `YYYYMMDDHHmm-slug.md` · C3 max 3 clarifying questions/fragment · N6 timezone `+07:00`.
 
 ### 2.2 Skill-writing framework (use for ALL future skill work)
 
@@ -80,9 +83,11 @@ User invoked **`mp-writing-great-skills`** and it is the canonical guide for wri
 
 ---
 
-## 3. The CDI note — a worked example and seed (worth knowing about)
+## 3. Worked examples and seeds (worth knowing about)
 
-The skill's first real production run produced `11a.Capture/11a1.Inbox/202606261148-cedar-cdi-bid-preproposal.md` ( Cedar / codename **CDI** ). It's the richest reference for how the user actually captures. Key facts in it:
+### 3.1 The CDI note — first real capture-session via the skill
+
+`11a.Capture/11a1.Inbox/202606261148-cedar-cdi-bid-preproposal.md` ( Cedar / codename **CDI** ). Key facts in it:
 
 - Cedar = 3rd-party org building a **SaaS to track CO2 emissions**; phase 1 = oil + electricity usage metrics, expand later.
 - AI-led delivery, phase 1.1 = quick AI-led prototype. AI engineer = **resource ask**.
@@ -97,6 +102,14 @@ The skill's first real production run produced `11a.Capture/11a1.Inbox/202606261
 
 **Distill seed flagged for T2:** the CDI note is a candidate to split into **two** permanent notes: (a) the **deal** → `11l.LtS/11l06.Presales/` (deal-qualification lane); (b) **human-in-the-loop verification design for AI extraction** → `11l.LtS/11l05.AI/` (novel content, no existing note covers it). The user explicitly raised the verification-gates question — it's a real knowledge seed.
 
+### 3.2 The Android lockout-gate note — merge-from-two example
+
+`11a.Capture/11a1.Inbox/202606261200-android-lockout-gate-jp-output-practice.md`. Born 2026-06-26 from *merging* two old Inbox fragments (`Japanese writing app idea.md` + `Just start app idea.md`) which were always two faces of one idea. Demonstrates the dedup-not-supersession cleanup pattern (W15): originals deleted, no Relics entry. Content: Android lockout-gate app, MVP = JP daily output practice (1 sentence-to-say no-repeat + 1 sentence with new word/grammar), writing-only, bypass with escalating difficulty, future scope = reader/Anki/podcast hooks. Fleeting idea; not yet committed to build.
+
+### 3.3 The Japanese Dailies task — relabel example
+
+`11a.Capture/11a1.Inbox/Japanese Dailies.md` relabeled 2026-06-26 from a bare routine list to `kind: task, status: fleeting` — task = workshop the raw floor into a real worst-day/best-day routine, then promote via distill. First applied example of the D17 `kind:` field. Body preserved as raw sketch; workshop goal added.
+
 Note was created in **hybrid mode**: gated clarifying questions for the first 3 fragments, then the user said "skip questions for now, treating this as a live note-taking first, ask questions afterward." That lived-mode invocation is the basis for D16 / task T4.
 
 ---
@@ -106,6 +119,8 @@ Note was created in **hybrid mode**: gated clarifying questions for the first 3 
 W1–W13 from sessions 1–2 (see `0002 §10`): autodelivery-as-guaranteed · passive capture friction · classify-at-capture · Relics-as-junk-drawer · SRS-buttons-as-priority · SRS-on-Inbox · "I-was-busy" backlog-rot · morning-review auto-hijack.
 
 **W14 (new 2026-06-26):** agents committing files they did not create. *Always ask the user before committing files you didn't write in this session* — provenance discipline (an untracked file may belong to a parallel agent session).
+
+**W15 (new 2026-06-26, Inbox cleanup):** keeping two capture fragments as two notes when they were always two faces of one idea — duplicates calcify. Merge instead. Reserved `19y.Relics/` for *supersession* (X replaced by Y), NOT for *dedup* (these were always one idea) — distinguish the two. (Also: don't bolt a new value onto `status` to mean 'category'; orthogonal `kind:` field is the disciplined move.)
 
 ---
 

@@ -56,11 +56,13 @@ Frontmatter — exactly these fields:
 ```
 ---
 status: fleeting
+kind: idea
 captured_at: <ISO 8601, +07:00>
 tags: []
 needs_review: false
 ---
 ```
+`kind` classifies the item (`idea` by default for capture output; `task` / `routine` / `lit-note` may be set later at triage time). Orthogonal to `status` (the fleeting lifecycle).
 Set `needs_review: true` if step 3 ended by budget exhaustion or user stop before clarification was complete.
 
 Body: the fragment in the user's voice, lightly cleaned (fix typos; expand abbreviations only if obvious). Preserve live-capture details unless they are duplicate or purely procedural. Do **not** insert `[[wikilinks]]`.
@@ -79,4 +81,4 @@ On "done" (or any end-of-session signal), exit. Otherwise return to step 1 with 
 
 ## This skill never
 
-Promotes a fleeting to a permanent note. Triages Inbox into Deferred or Someday. Adds tags beyond `[]`. Inserts `[[wikilinks]]`. Touches the spaced-repetition plugin or any review schedule. Writes outside `11a1.Inbox/`. Appends to `.memory/` or `.ai/`.
+Promotes a fleeting to a permanent note. Triages Inbox into Deferred or Someday. Sets `kind` to anything other than the default `idea` (kind is triage's job, not capture's). Adds tags beyond `[]`. Inserts `[[wikilinks]]`. Touches the spaced-repetition plugin or any review schedule. Writes outside `11a1.Inbox/`. Appends to `.memory/` or `.ai/`.
