@@ -1,6 +1,6 @@
 ---
 name: capture-fleeting
-description: Capture a fleeting note from a thought the user offloads. Use when the user dumps a raw fragment, jot, brain-dump, or one-liner to get it out of their head, or says capture / jot / note-down / dump this. If the message might be a question or request instead, ask one disambiguation question before acting. Supports live capture: the user keeps adding until an end signal, then clarification begins. Writes to 11a1.Inbox/ and loops.
+description: "Capture a fleeting note from a thought the user offloads. Use when the user dumps a raw fragment, jot, brain-dump, or one-liner to get it out of their head, or says capture / jot / note-down / dump this. If the message might be a question or request instead, ask one disambiguation question before acting. Supports live capture; the user keeps adding until an end signal, then clarification begins. Writes to 11a1.Inbox/ and loops."
 ---
 
 # Capture a fleeting note
