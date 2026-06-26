@@ -20,7 +20,7 @@ Capture never writes outside `11a1.Inbox/`. Triage (Inbox → Deferred/Someday) 
 
 If the user's latest message is a raw fragment, brain-dump, or one-liner — or names **capture / jot / note-down / dump** — load the **capture-fleeting** skill (`/skill:capture-fleeting`) and run it. Do **not** answer or summarize the fragment first.
 
-If the message might be a question or request instead, ask **one** disambiguation question ("Capture this, or were you asking me something?") before acting.
+If the message might be a question or request instead, ask **one** disambiguation question ("Capture this, or were you asking me something?"). On a non-capture answer, treat the message as a normal question or request and **do not capture it**.
 
 ## Skills roadmap
 

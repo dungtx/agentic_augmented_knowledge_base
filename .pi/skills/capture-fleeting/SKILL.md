@@ -13,7 +13,7 @@ A **fleeting** note is a raw, perishable record of the user's own thought — th
 
 If the message is a raw fragment or names capture (jot / note-down / dump / capture this), go to step 2.
 
-If it might instead be a question or request to you, ask exactly one disambiguation question — "Capture this, or were you asking me something?" — and proceed only on a capture answer.
+If it might instead be a question or request to you, ask exactly one disambiguation question — "Capture this, or were you asking me something?" On a non-capture answer, **exit this skill** and treat the message as a normal question or request. Do not capture it.
 
 **Done when** you are treating the message as a capture fragment, unambiguously or after the one-question gate.
 
