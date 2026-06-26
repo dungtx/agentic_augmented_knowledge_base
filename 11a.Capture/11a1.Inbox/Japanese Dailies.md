@@ -1,4 +1,23 @@
+---
+status: fleeting
+kind: task
+captured_at: 2026-06-12T00:00:00+07:00
+tags: []
+needs_review: true
+---
 
+# Japanese Dailies — workshop into a real routine
+
+## What this is
+A capture of the **minimum JP activities** I can do in a day that cover all skills (still overachieving, but it's the floor I sketched). This is the **starting point for building my JP learning habit**, not the final routine.
+
+## Workshop goal
+Turn this into a real routine with:
+- **Worst-day minimum** (the truly minimal set for a bad day).
+- **Best-day extension** (add-on activities for when I feel up to it).
+- A feeling of "right" — workshop until it does.
+
+## Raw capture (the floor I sketched)
 - Anki
 - Practice Kana for 100 letters
 - Mine 1 new sentence
@@ -13,3 +32,6 @@
 - (Optional) Watch 5 minutes of Japanese only content
 - (Optional) Go through 3 dialog boxes in a VN
 - (Optional) Go through 5 test questions
+
+## Status
+Task (workshop pending). Promote to a permanent routine note in `11l.LtS/` via the distill skill once the routine feels right. `needs_review: true` until workshopped.
