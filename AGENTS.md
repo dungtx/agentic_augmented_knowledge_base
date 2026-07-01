@@ -22,6 +22,6 @@ Two more are planned but not yet built: `morning-review` (Inbox triage) and `web
 
 ## Pointers
 
-- **Startup / task context:** read `.memory/0003-state-of-system-and-pickup-tasks.md` first.
+- **Startup:** read `.memory/facts.md` first. For full task inventory, then `.memory/0003-state-of-system-and-pickup-tasks.md`.
 - **Skill bodies:** `.pi/skills/<name>/SKILL.md`
-- **Vault conventions (frontmatter, filenames, lanes):** `.ai/vault-conventions.md` (not yet built — see T7)
+- **Vault conventions (frontmatter, filenames, lanes):** `.ai/vault-conventions.md`
