@@ -1,5 +1,6 @@
 ---
-status: fleeting
+status: seeded
+seed: "[[../../11b.Seeds/interview-prep-playbook.md]]"
 captured_at: 2026-06-26T16:41:06+07:00
 tags: []
 needs_review: false

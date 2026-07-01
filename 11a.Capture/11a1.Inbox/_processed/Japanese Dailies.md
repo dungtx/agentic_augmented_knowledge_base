@@ -1,9 +1,10 @@
 ---
-status: fleeting
+status: seeded
 kind: task
 captured_at: 2026-06-12T00:00:00+07:00
 tags: []
 needs_review: true
+seed: "[[../../11b.Seeds/jp-daily-practice-routine.md]]"
 ---
 
 # Japanese Dailies — workshop into a real routine

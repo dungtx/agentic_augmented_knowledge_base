@@ -1,5 +1,6 @@
 ---
-status: fleeting
+status: seeded
+seed: "[[../../11b.Seeds/candidate-evaluation-rubric.md]]"
 captured_at: 2026-06-26T17:50:43+07:00
 tags: []
 needs_review: false
