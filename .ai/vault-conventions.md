@@ -8,8 +8,8 @@
 |------|---------|-----------------|
 | `11a.Capture/11a1.Inbox/` | Landing area, ~24h horizon. Every capture starts here. | `capture-fleeting` |
 | `11a.Capture/11a1.Inbox/_processed/` | Archived captures (after seeding) | `seed-inbox` |
-| `11a.Capture/11a2.Deferred/` | Important-not-urgent, promoted at triage | `morning-review` (planned) |
-| `11a.Capture/11a3.Someday/` | Nice-to-have idea resurfacing; future SRS deck | `morning-review` (planned) |
+| `11a.Capture/11a2.Deferred/` | Important-not-urgent, promoted at triage | `morning-review` |
+| `11a.Capture/11a3.Someday/` | Nice-to-have idea resurfacing; future SRS deck | `morning-review` |
 | `11b.Seeds/` | Workable rough drafts. Flat folder. | `seed-inbox`, `concept-mine` |
 | `11b.Seeds/_processed/` | Archived seeds (after distillation or concept-refine) | `distill-permanent`, `concept-refine` |
 | `11l.LtS/` | Permanent notes. Flat by default; place into existing `11lNN.<Domain>/` subfolder only when the note clearly belongs to one. **Never create new subfolders** — categories emerge organically. | `distill-permanent`, `concept-refine` |
@@ -106,11 +106,10 @@ permanent_note: "[[<relative path to permanent note>]]"
 
 ## Controlled vocabulary (tags)
 
-A central tag-glossary is planned (modeled on `11l.LtS/presale-glosary.md`) but not yet built. Until it exists:
-- Refine tags against existing usage in the vault (grep `^tags:` across `11l.LtS/`, `11b.Seeds/`, and `presale-glosary.md`).
-- Standardize: prefer singular nouns, drop noise words, pick precise over broad.
+A central tag-glossary lives at `11l.LtS/tag-glossary.md`. When assigning tags:
+- Pick from the glossary. Each tag has a one-line definition — use the most precise match.
 - 2–6 tags per note.
-- Adding a genuinely new tag is fine — the glossary catches up later.
+- Adding a genuinely new tag is fine — add it to the glossary with a definition after.
 
 ## Agent hard rules
 

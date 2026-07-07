@@ -20,7 +20,7 @@ Capture is lossy — bias toward capturing (a stray note is deletable; a missed 
 
 | What | Where |
 |------|-------|
-| 5 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, distill-permanent, concept-mine, concept-refine |
+| 6 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, distill-permanent, concept-mine, concept-refine, morning-review |
 | AGENTS.md (signpost) | Vault root — dispatch table + ambiguity gate + pointers |
 | facts.md | `.memory/facts.md` — this file |
 | .ai/vault-conventions.md | `.ai/vault-conventions.md` — frontmatter schemas, filenames, lane rules |
@@ -33,10 +33,10 @@ In rough priority order (full task briefs: `.memory/0003-state-of-system-and-pic
 
 1. ~~T6 — facts.md~~ ✅
 2. ~~T7 — `.ai/vault-conventions.md`~~ ✅
-3. **G8 — distill test** — run distill-permanent on a real seed to validate the skill
-4. **Central tag-glossary** — `11l.LtS/tag-glossary.md`, modeled on `presale-glosary.md`
-5. **T3 — morning-review skill** — consent-first Inbox triage, cross-lane surfacing
-6. **T5 — note-taking concept walkthrough** — 15–20 concepts + permanent reference note
+3. ~~Central tag-glossary~~ ✅
+4. **G8 — distill test** — run distill-permanent on a real seed to validate the skill
+5. ~~T3 — morning-review skill~~ ✅
+6. ~~T5 — note-taking concept walkthrough~~ ✅
 7. **T10 — web-research skill** — research on user's behalf → cited notes
 8. **T8 — SRS for `11a3.Someday/`** — spaced-repetition deck (pinned)
 
