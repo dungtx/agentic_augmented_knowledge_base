@@ -5,7 +5,7 @@ seed_level: 1hour
 captured_at: 2026-06-12T00:00:00+07:00
 seeded_at: 2026-06-30T00:00:00+07:00
 source: "[[../11a.Capture/11a1.Inbox/_processed/Japanese Dailies.md]]"
-tags: [japanese, routine, habit, learning]
+tags: [japanese, routine, habit, language-learning]
 keywords: [japanese-daily-practice, language-learning-routine, habit-formation, worst-day-minimum, skill-rotation]
 ---
 

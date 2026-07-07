@@ -17,11 +17,13 @@ Fire the matching skill when the user says or means:
 | distill, promote a seed, finalize | `distill-permanent` |
 | mine, quarry, explore a concept | `concept-mine` |
 | refine, shape a concept | `concept-refine` |
+| start my day, morning, triage inbox, triage | `morning-review` |
 
-Two more are planned but not yet built: `morning-review` (Inbox triage) and `web-research` (web research → cited notes).
+One more is planned but not yet built: `web-research` (web research → cited notes).
 
 ## Pointers
 
 - **Startup:** read `.memory/facts.md` first. For full task inventory, then `.memory/0003-state-of-system-and-pickup-tasks.md`.
+- **Session start:** if there are Inbox items (files in `11a1.Inbox/` with `status: fleeting`), ask: "N items in Inbox — run morning-review?" Do not auto-fire — wait for the user to say yes.
 - **Skill bodies:** `.pi/skills/<name>/SKILL.md`
 - **Vault conventions (frontmatter, filenames, lanes):** `.ai/vault-conventions.md`

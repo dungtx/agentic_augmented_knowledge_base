@@ -1,0 +1,11 @@
+{
+	"id": "japanese-popup-dictionary",
+	"name": "Japanese Popup Dictionary",
+	"version": "1.0.3",
+	"minAppVersion": "1.10.0",
+	"description": "Fast, offline Japanese popup dictionary using Yomitan dictionaries.",
+	"author": "Atacan Süder",
+	"authorUrl": "https://github.com/atacansuder",
+	"fundingUrl": "https://buymeacoffee.com/asuder",
+	"isDesktopOnly": true
+}
