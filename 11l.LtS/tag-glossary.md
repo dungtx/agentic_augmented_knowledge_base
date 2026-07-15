@@ -67,6 +67,8 @@ ai
      Crafting effective prompts for LLMs — structure, constraints, iteration.
   agent-design
      Designing autonomous AI agent systems: tool use, memory, planning.
+  mcp
+     Model Context Protocol — the tool-discovery/tool-call contract LLM clients use to reach external systems.
   agents
      Using AI agents as tools or assistants within a larger workflow.
   verification
