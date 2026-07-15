@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "arch-diagram-gen IR",
+  "description": "Typed intermediate representation for C4 architecture diagrams. The model fills this; render.py/validate.py consume it. Element/relationship kinds are closed enums so diagram syntax cannot be misspelled.",
+  "type": "object",
+  "required": ["system", "containers"],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+        "name": {"type": "string"},
+        "description": {"type": "string"}
+      }
+    },
+    "persons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "external": {"type": "boolean", "default": false}
+        }
+      }
+    },
+    "containers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+          "name": {"type": "string"},
+          "tech": {"type": "string"},
+          "description": {"type": "string"},
+          "owned": {"type": "boolean", "default": true,
+                    "description": "If false, treated as a boundary reference (e.g. another product's service) and not given its own L3 component diagram."},
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.]*$"},
+                "name": {"type": "string"},
+                "tech": {"type": "string"},
+                "description": {"type": "string"},
+                "db": {"type": "boolean", "default": false,
+                       "description": "Render as ComponentDb instead of Component."}
+              }
+            }
+          }
+        }
+      }
+    },
+    "datastores": {
+      "type": "array",
+      "description": "Owned persistence (DB, cache, file store). Never decomposed into components.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+          "name": {"type": "string"},
+          "tech": {"type": "string"},
+          "description": {"type": "string"}
+        }
+      }
+    },
+    "externals": {
+      "type": "array",
+      "description": "Systems outside the boundary (vendors, other products). Never decomposed.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"},
+          "name": {"type": "string"},
+          "tech": {"type": "string"},
+          "description": {"type": "string"}
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "from": {"type": "string", "description": "id of any element (person/container/component/datastore/external/system)"},
+          "to": {"type": "string"},
+          "label": {"type": "string"},
+          "tech": {"type": "string"},
+          "kind": {"enum": ["sync", "async", "bidirectional"], "default": "sync"},
+          "direction": {"enum": ["up", "down", "left", "right", "auto"], "default": "auto"}
+        }
+      }
+    }
+  }
+}

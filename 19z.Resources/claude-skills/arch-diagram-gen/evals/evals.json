@@ -1,0 +1,38 @@
+{
+  "skill_name": "arch-diagram-gen",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate C4 architecture diagrams for the rfpilot product from the graphify graph at graphify-out/products/rfpilot/graph.json - a container diagram plus a component diagram per service.",
+      "expected_output": "context.puml + container.puml + one component .puml per owned container + index.md manifest; validate.py reports PASS (zero syntax errors, full coverage).",
+      "files": [],
+      "assertions": [
+        {"text": "validate.py exits 0 (VALIDATION PASSED) on the output dir", "kind": "script"},
+        {"text": "one component diagram exists per owned container (manifest denominator == covered + logged skips)", "kind": "script"},
+        {"text": "no diagram contains an invalid macro (no Rel_Bi / unknown C4 macro)", "kind": "script"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I don't use graphify. Scan this repo and draw me a C4 diagram of the services and how they talk to each other, in mermaid so it shows on GitHub.",
+      "expected_output": "repo-scan skeleton enriched into an IR, built as mermaid (.mmd) context+container+components, index.md manifest, validation clean.",
+      "files": [],
+      "assertions": [
+        {"text": ".mmd files are produced for context, container, and each owned container", "kind": "script"},
+        {"text": "containers detected correspond to real deployable units (manifest dirs)", "kind": "manual"},
+        {"text": "validate.py passes", "kind": "script"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Here is an architecture.yaml for a planned payments system. Turn it into C4 PlantUML and Mermaid, and tell me if any container is missing a component breakdown.",
+      "expected_output": "both formats rendered from the yaml-derived IR; manifest flags any owned container as 'skipped: no components defined'; validation clean.",
+      "files": ["architecture.yaml"],
+      "assertions": [
+        {"text": "both .puml and .mmd are generated for every level", "kind": "script"},
+        {"text": "manifest explicitly lists each owned container with generated/skipped status", "kind": "script"},
+        {"text": "validate.py passes", "kind": "script"}
+      ]
+    }
+  ]
+}

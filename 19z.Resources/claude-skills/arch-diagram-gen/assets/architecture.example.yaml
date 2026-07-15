@@ -1,0 +1,59 @@
+# architecture.example.yaml - copy, fill in, then:
+#   python scripts/yaml_to_ir.py architecture.yaml > ir.json
+# Mirrors the IR 1:1. Element kinds: person/system/container/container_db/component/external.
+
+system:
+  id: payments
+  name: Payments Platform
+  description: Accept and settle customer payments
+
+persons:
+  - id: customer
+    name: Customer
+    description: Pays for orders
+
+containers:
+  - id: api
+    name: Payments API
+    tech: Go
+    description: Public REST API
+    owned: true
+    components:
+      - id: api.routes
+        name: HTTP Routes
+      - id: api.charge_svc
+        name: Charge Service
+      - id: api.psp_adapter
+        name: PSP Adapter
+  - id: worker
+    name: Settlement Worker
+    tech: Go
+    components:
+      - id: worker.consumer
+        name: Queue Consumer
+      - id: worker.ledger
+        name: Ledger Writer
+
+datastores:
+  - id: pg
+    name: Payments DB
+    tech: PostgreSQL
+  - id: queue
+    name: Settlement Queue
+    tech: SQS
+
+externals:
+  - id: stripe
+    name: Stripe
+    description: Payment service provider
+
+relations:
+  - {from: customer, to: api, label: Pays, tech: HTTPS}
+  - {from: api.routes, to: api.charge_svc, label: routes to}
+  - {from: api.charge_svc, to: api.psp_adapter, label: uses}
+  - {from: api.psp_adapter, to: stripe, label: Charge card, tech: HTTPS}
+  - {from: api.charge_svc, to: pg, label: writes charge, tech: SQL}
+  - {from: api.charge_svc, to: queue, label: enqueue settlement, kind: async}
+  - {from: worker.consumer, to: queue, label: consumes, kind: async}
+  - {from: worker.consumer, to: worker.ledger, label: invokes}
+  - {from: worker.ledger, to: pg, label: posts ledger, tech: SQL}
