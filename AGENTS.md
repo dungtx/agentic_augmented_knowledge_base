@@ -15,12 +15,14 @@ Fire the matching skill when the user says or means:
 | capture, jot, dump, note down, brainstorm | `capture-fleeting` |
 | seed, process, promote an inbox item | `seed-inbox` |
 | start project, kick off project, create project | `project-kickoff` |
+| close project, retro, wrap up project, project retrospective | `project-retro` |
 | distill, promote a seed, finalize | `distill-permanent` |
 | mine, quarry, explore a concept | `concept-mine` |
 | refine, shape a concept | `concept-refine` |
 | start my day, morning, triage inbox, triage | `morning-review` |
 
 One more is planned but not yet built: `web-research` (web research → cited notes).
+- **Project workflow:** see `.ai/vault-conventions.md` (projects lane) and `11c.Projects/`
 
 ## Pointers
 

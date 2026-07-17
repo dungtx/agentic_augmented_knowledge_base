@@ -20,7 +20,7 @@ Capture is lossy — bias toward capturing (a stray note is deletable; a missed 
 
 | What | Where |
 |------|-------|
-| 7 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, project-kickoff, distill-permanent, concept-mine, concept-refine, morning-review |
+| 8 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, project-kickoff, project-retro, distill-permanent, concept-mine, concept-refine, morning-review |
 | 1 active project | `11c.Projects/BJP26110-RIC/` — AI transformation consultant bid for RIC |
 | AGENTS.md (signpost) | Vault root — dispatch table + ambiguity gate + pointers |
 | facts.md | `.memory/facts.md` — this file |
