@@ -27,3 +27,4 @@ One more is planned but not yet built: `web-research` (web research → cited no
 - **Session start:** if there are Inbox items (files in `11a1.Inbox/` with `status: fleeting`), ask: "N items in Inbox — run morning-review?" Do not auto-fire — wait for the user to say yes.
 - **Skill bodies:** `.pi/skills/<name>/SKILL.md`
 - **Vault conventions (frontmatter, filenames, lanes):** `.ai/vault-conventions.md`
+- **Projects:** `11c.Projects/<ProjectName>/` — active work with multiple notes; see project's `README.md`

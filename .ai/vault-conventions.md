@@ -12,6 +12,7 @@
 | `11a.Capture/11a3.Someday/` | Nice-to-have idea resurfacing; future SRS deck | `morning-review` |
 | `11b.Seeds/` | Workable rough drafts. Flat folder. | `seed-inbox`, `concept-mine` |
 | `11b.Seeds/_processed/` | Archived seeds (after distillation or concept-refine) | `distill-permanent`, `concept-refine` |
+| `11c.Projects/<ProjectName>/` | Active projects — multiple related notes, external artifacts, project-specific context. Each project has a `README.md` as its entry point. | Manual, `seed-inbox` (for seeding into a project) |
 | `11l.LtS/` | Permanent notes. Flat by default; place into existing `11lNN.<Domain>/` subfolder only when the note clearly belongs to one. **Never create new subfolders** — categories emerge organically. | `distill-permanent`, `concept-refine` |
 | `19z.Resources/` | Cloned external repos (read-only) | Manual |
 | `.memory/` | Agent episodic memory: append-log `NNNN-<slug>.md` + `facts.md` snapshot | Any agent |
@@ -103,6 +104,49 @@ permanent_note: "[[<relative path to permanent note>]]"
 - Keyword-rich — the terms the user would grep to find this note.
 - No dates, no IDs, no sequential numbering.
 - If a slug collides with an existing file, append `-2` (never silently overwrite).
+
+## Project lane (`11c.Projects/`)
+
+### Project workflow
+
+Two pipelines share the Inbox but diverge: **capture → seed → permanent** and **capture → project**.
+
+| Phase | What happens |
+|-------|-------------|
+| **Trigger** | 2+ related Inbox items → agent asks to start a project; or user invokes directly ("start project X") |
+| **Kickoff** | Project-specific skill grills user from Inbox clues → generates `README.md` + scattered initial notes. Replaces `seed-inbox` for project-bound items. |
+| **Active** | User invokes "work on project X." All session output lives inside `11c.Projects/<ProjectName>/`. New captures during active work still go to Inbox; agent periodically surfaces relevant Inbox items and asks "promote to project or leave?" |
+| **Closed** | Project stays in `11c.Projects/`. `README.md` status updated to `closed`. Retro session surfaces old notes: what went wrong, why, what to do differently, what to set up first next time. Lessons may be distilled to `11l.LtS/`. |
+
+### Project README frontmatter
+
+```yaml
+project: <ProjectCode-ClientSlug>
+client: <codename, no real names under NDA>
+status: bid | delivery | closed
+started: 2026-01-01
+closed: 2026-06-15  # only when status = closed
+```
+
+### Project structure
+
+- `11c.Projects/<ProjectName>/README.md` — entry point (overview, status log, links to project notes)
+- Flat `.md` files alongside README — no subfolders until volume demands it
+- **No client documents** (NDA). Agent must flag PII or client-identifying info and ask user to remove.
+- New captures during active work → Inbox (not project). Agent surfaces relevant ones.
+
+### Project agent rules
+
+- **Flag PII/client info** — if you see real names, internal company documents, or identifying details, pause and ask user to remove.
+- **Don't create subfolders** inside a project until volume clearly justifies it (user will say when).
+- **Update README status log** on every substantive project event.
+- **Project notes use readable filenames** — `mcp-internal-notes.md`, not date-prefixed (dates live in frontmatter or status log).
+
+### TODO — project skills (not yet built)
+
+- **project-kickoff skill** — grills user from Inbox clues, generates README + initial notes. Replaces seed-inbox for project-bound items. Seam between raw capture and project note TBD.
+- **project-retro skill** — surfaces old notes when project closes, asks: what went wrong, why, how to do better, redo-priorities. Distills lessons to `11l.LtS/`.
+- **Seam clarification** — during active project work, the boundary between "keep in Inbox" vs. "move to project" needs a concrete rule. Current policy: capture always → Inbox; agent surfaces relevant ones.
 
 ## Controlled vocabulary (tags)
 

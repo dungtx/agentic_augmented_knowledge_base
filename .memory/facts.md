@@ -1,7 +1,7 @@
 # facts.md — vault snapshot
 
 > A flat, current-state summary for fast agent bootstrap. Rewrite this file when a substantive task changes the state. The timeline lives in `NNNN-<slug>.md`; this is the "answer me now" layer.
-> Last updated: 2026-07-01 (post distill-permanent build + AGENTS.md thinning)
+> Last updated: 2026-07-17 (project lane created, BJP26110-RIC kicked off)
 
 ## User
 
@@ -21,6 +21,7 @@ Capture is lossy — bias toward capturing (a stray note is deletable; a missed 
 | What | Where |
 |------|-------|
 | 6 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, distill-permanent, concept-mine, concept-refine, morning-review |
+| 1 active project | `11c.Projects/BJP26110-RIC/` — AI transformation consultant bid for RIC |
 | AGENTS.md (signpost) | Vault root — dispatch table + ambiguity gate + pointers |
 | facts.md | `.memory/facts.md` — this file |
 | .ai/vault-conventions.md | `.ai/vault-conventions.md` — frontmatter schemas, filenames, lane rules |
@@ -39,6 +40,8 @@ In rough priority order (full task briefs: `.memory/0003-state-of-system-and-pic
 6. ~~T5 — note-taking concept walkthrough~~ ✅
 7. **T10 — web-research skill** — research on user's behalf → cited notes
 8. **T8 — SRS for `11a3.Someday/`** — spaced-repetition deck (pinned)
+9. **T11 — project-kickoff skill** — grill user from Inbox clues, generate project README + initial notes
+10. **T12 — project-retro skill** — surface lessons when project closes, distill to permanent notes
 
 ## Key conventions (hard rules from locked decisions)
 
@@ -47,6 +50,7 @@ In rough priority order (full task briefs: `.memory/0003-state-of-system-and-pic
 - `11a.Capture/11a2.Deferred/` — important-not-urgent (triage-time promotion)
 - `11a.Capture/11a3.Someday/` — nice-to-have idea resurfacing
 - `11b.Seeds/` — rough drafts; `_processed/` for archived seeds
+- `11c.Projects/<ProjectName>/` — active projects (bid/delivery/personal). Capture → project pipeline, separate from capture → seed. README.md as entry point.
 - `11l.LtS/` — permanent notes (flat default, place into existing `11lNN.<Domain>/` subfolder when clearly belonging; never create new subfolders)
 
 **Frontmatter — fleeting (capture output):**
