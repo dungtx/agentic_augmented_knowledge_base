@@ -36,6 +36,18 @@ Record the cross-lane matches per group. If none found, note that too — it's u
 
 **Done when** every Inbox item is assigned to a topic group, and each group has its cross-lane matches identified.
 
+### 2b. Detect project clusters
+
+For any topic group with **2 or more** Inbox items that share a concrete project/client signal (client name, project code, bid reference, or a clear shared deliverable):
+
+- Flag the group: "These <N> items look like they're about the same project — start a project for them?"
+- If user says yes: fire `project-kickoff` skill, pass the identified filenames, and exit morning-review (project-kickoff takes over).
+- If user says no: continue to step 3 as normal.
+
+Do NOT auto-fire project-kickoff. Consent first, same as everything else in morning-review.
+
+**Done when** project clusters are either handed off to project-kickoff or declined.
+
 ### 3. Triage each group (one at a time)
 
 For each topic group, present:

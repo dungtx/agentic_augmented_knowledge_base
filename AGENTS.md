@@ -14,6 +14,7 @@ Fire the matching skill when the user says or means:
 |---------|-------|
 | capture, jot, dump, note down, brainstorm | `capture-fleeting` |
 | seed, process, promote an inbox item | `seed-inbox` |
+| start project, kick off project, create project | `project-kickoff` |
 | distill, promote a seed, finalize | `distill-permanent` |
 | mine, quarry, explore a concept | `concept-mine` |
 | refine, shape a concept | `concept-refine` |

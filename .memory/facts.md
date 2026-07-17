@@ -20,7 +20,7 @@ Capture is lossy — bias toward capturing (a stray note is deletable; a missed 
 
 | What | Where |
 |------|-------|
-| 6 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, distill-permanent, concept-mine, concept-refine, morning-review |
+| 7 skills | `.pi/skills/<name>/SKILL.md` — capture-fleeting, seed-inbox, project-kickoff, distill-permanent, concept-mine, concept-refine, morning-review |
 | 1 active project | `11c.Projects/BJP26110-RIC/` — AI transformation consultant bid for RIC |
 | AGENTS.md (signpost) | Vault root — dispatch table + ambiguity gate + pointers |
 | facts.md | `.memory/facts.md` — this file |
@@ -40,7 +40,7 @@ In rough priority order (full task briefs: `.memory/0003-state-of-system-and-pic
 6. ~~T5 — note-taking concept walkthrough~~ ✅
 7. **T10 — web-research skill** — research on user's behalf → cited notes
 8. **T8 — SRS for `11a3.Someday/`** — spaced-repetition deck (pinned)
-9. **T11 — project-kickoff skill** — grill user from Inbox clues, generate project README + initial notes
+9. ~~T11 — project-kickoff skill~~ ✅
 10. **T12 — project-retro skill** — surface lessons when project closes, distill to permanent notes
 
 ## Key conventions (hard rules from locked decisions)
