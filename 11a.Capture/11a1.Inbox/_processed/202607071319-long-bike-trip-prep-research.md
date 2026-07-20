@@ -1,9 +1,9 @@
 ---
-status: fleeting
+status: triaged
 kind: idea
 captured_at: 2026-07-07T13:19:21+07:00
-tags: []
-needs_review: false
+triaged_to: "[[../../11a2.Deffered/202607071319-long-bike-trip-prep-research.md]]"
+triaged_at: 2026-07-17T15:50:00+07:00
 ---
 
 Research agenda for prepping a long bike trip (60–80km), from a starting point of no clue. Topics to cover:

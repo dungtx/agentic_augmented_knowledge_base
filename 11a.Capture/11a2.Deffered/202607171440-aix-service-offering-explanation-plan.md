@@ -1,7 +1,9 @@
 ---
-status: fleeting
+status: deferred
 kind: idea
 captured_at: 2026-07-17T14:40:25+07:00
+triaged_at: 2026-07-17T16:02:00+07:00
+defer_until: 2026-07-27
 tags: []
 needs_review: false
 ---

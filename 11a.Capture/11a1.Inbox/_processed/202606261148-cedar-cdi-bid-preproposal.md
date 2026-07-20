@@ -1,8 +1,7 @@
 ---
-status: fleeting
+status: discarded
 captured_at: 2026-06-26T11:48:00+07:00
-tags: []
-needs_review: true
+discarded_at: 2026-07-17T16:00:00+07:00
 ---
 
 # Cedar (CDI) — bid, pre-proposal

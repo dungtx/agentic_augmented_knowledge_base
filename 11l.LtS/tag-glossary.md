@@ -119,6 +119,19 @@ protocol
 
 **See also:** `habit` (Language & Habit), `routine` (Language & Habit)
 
+## Home & Lifestyle
+
+```
+home
+   Home goods, domestic purchases, living space improvements.
+  fabric
+     Textile materials, fabric properties, material selection for clothing and home.
+  grooming
+     Personal grooming: skin care, hair care, hygiene routines.
+  vietnam
+     Vietnam-specific context: local shopping, climate adaptations, living in VN.
+```
+
 ## Conventions
 
 - **Case:** lowercase, hyphens between words (`deal-qualification` not `deal_qualification` or `Deal Qualification`).

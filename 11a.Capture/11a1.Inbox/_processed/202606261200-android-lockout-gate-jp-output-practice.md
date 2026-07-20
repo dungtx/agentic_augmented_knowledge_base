@@ -1,8 +1,8 @@
 ---
-status: fleeting
+status: triaged
 captured_at: 2026-06-26T12:00:00+07:00
-tags: []
-needs_review: false
+triaged_to: "[[../../11a3.Someday/202606261200-android-lockout-gate-jp-output-practice.md]]"
+triaged_at: 2026-07-17T15:45:00+07:00
 ---
 
 # Android lockout-gate app — JP daily output practice (MVP)

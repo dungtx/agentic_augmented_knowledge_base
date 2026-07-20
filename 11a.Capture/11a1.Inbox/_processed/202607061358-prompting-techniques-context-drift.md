@@ -1,9 +1,9 @@
 ---
-status: fleeting
+status: triaged
 kind: idea
 captured_at: 2026-07-06T13:58:40+07:00
-tags: []
-needs_review: false
+triaged_to: "[[../202607171612-ai-research-agenda-sdlc-gates.md]]"
+triaged_at: 2026-07-17T16:15:00+07:00
 ---
 
 Explore prompting techniques: find the best way to provide context to an LLM so intent stays clear and the conversation/output doesn't drift.

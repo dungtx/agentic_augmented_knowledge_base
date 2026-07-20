@@ -1,9 +1,9 @@
 ---
-status: fleeting
+status: triaged
 kind: task
 captured_at: 2026-07-17T15:24:00+07:00
-tags: []
-needs_review: false
+triaged_to: "[[../../11a2.Deffered/202607171524-unknown-unknowns-skill-research.md]]"
+triaged_at: 2026-07-17T16:05:00+07:00
 ---
 
 Researching a complementary skill to [[/home/dzung/.pi/agent/skills/mattpocock-skills/skills/productivity/grilling/SKILL.md|grilling]]. Grilling is good for clarifying known unknowns and locking in a design. The missing piece: a skill that finds **unknown unknowns**, with confidence-level judgements and guidance on how to approach them.
