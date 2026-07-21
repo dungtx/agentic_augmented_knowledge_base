@@ -4,3 +4,8 @@ https://github.com/muratcankoylan/agent-skills-for-context-engineering
 https://github.com/deanpeters/Product-Manager-Skills/blob/main/skills/acquisition-channel-advisor/SKILL.md
 https://github.com/sohaibdevv/AI-AGENT-SKILLS
 https://github.com/forsonny/deep-discovery
+
+https://github.com/mattpocock/skills
+https://github.com/Dawsine/grill-your-unknowns
+https://github.com/Neeeophytee/finding-unknowns-skills
+https://github.com/bigeasyfreeman/adlc
