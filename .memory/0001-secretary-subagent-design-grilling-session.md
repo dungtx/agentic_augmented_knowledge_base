@@ -20,7 +20,7 @@
 
 - Vault root: `/srv/dzdir/10.Personal/11.KnowledgeBase`
 - Layout (PARA-ish / Johnny-decimal style):
-  - `11a.Capture/` — `11a1.Inbox/`, `11a2.Deffered/` (typo, original), `11a3.Someday/`
+  - `11a.Capture/` — `11a1.Inbox/`, `11a2.Deferred/`, `11a3.Someday/`
   - `11l.LtS/` — "Lessons to Self": distilled permanent notes; has `MOC.md` (map-of-content); subfolders `11l01.Linux`, `11l05.AI`, `11l06.Presales`
   - `19z.Resources/` — cloned external repos (skills-main, market-my-spec, codemyspec)
 - Existing conventions in use: Obsidian `[[wikilinks]]`, glossary/MOC pattern (see `11l.LtS/11l06.Presales/00 - Presales Glossary.md`), per-domain deep subfolders.

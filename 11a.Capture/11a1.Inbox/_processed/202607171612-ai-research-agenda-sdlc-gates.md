@@ -1,9 +1,11 @@
 ---
-status: fleeting
+status: triaged
 kind: idea
 captured_at: 2026-07-17T16:12:00+07:00
 tags: []
 needs_review: false
+triaged_at: 2026-07-21T11:44:49+07:00
+triaged_to: "[[../../11c.Projects/AI-Delivery-Pipeline/README.md]]"
 ---
 
 AI research agenda — multiple threads to explore:

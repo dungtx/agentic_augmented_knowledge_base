@@ -2,7 +2,7 @@
 status: triaged
 kind: task
 captured_at: 2026-07-17T15:24:00+07:00
-triaged_to: "[[../../11a2.Deffered/202607171524-unknown-unknowns-skill-research.md]]"
+triaged_to: "[[../../11a2.Deferred/202607171524-unknown-unknowns-skill-research.md]]"
 triaged_at: 2026-07-17T16:05:00+07:00
 ---
 

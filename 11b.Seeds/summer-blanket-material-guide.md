@@ -33,7 +33,7 @@ Sleeping in Vietnam's summer means juggling conflicting needs. Some nights you r
 
 ### Related
 - [[../11a.Capture/11a1.Inbox/202607071047-japanese-summer-fabric-research|Japanese summer fabric research]] — clothing-focused, same climate challenge
-- [[../11a.Capture/11a2.Deffered/202607171548-male-skin-hair-care-research|Skin/hair care research]] — adjacent personal care
+- [[../11a.Capture/11a2.Deferred/202607171548-male-skin-hair-care-research|Skin/hair care research]] — adjacent personal care
 
 ## Keywords
 blanket-material, hot-sleep, airway-protection

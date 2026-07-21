@@ -2,7 +2,7 @@
 status: triaged
 kind: idea
 captured_at: 2026-07-17T14:40:25+07:00
-triaged_to: "[[../../11a2.Deffered/202607171440-aix-service-offering-explanation-plan.md]]"
+triaged_to: "[[../../11a2.Deferred/202607171440-aix-service-offering-explanation-plan.md]]"
 triaged_at: 2026-07-17T16:02:00+07:00
 ---
 

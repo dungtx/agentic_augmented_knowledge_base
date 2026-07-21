@@ -4,7 +4,7 @@ kind: idea
 seed_level: 1hour
 captured_at: 2026-07-17T15:48:00+07:00
 seeded_at: 2026-07-17T16:50:00+07:00
-source: "[[../../11a.Capture/11a2.Deffered/202607171548-male-skin-hair-care-research.md]]"
+source: "[[../../11a.Capture/11a2.Deferred/202607171548-male-skin-hair-care-research.md]]"
 tags: [grooming, vietnam]
 keywords: [skin-care, hair-care, male-grooming]
 ---
