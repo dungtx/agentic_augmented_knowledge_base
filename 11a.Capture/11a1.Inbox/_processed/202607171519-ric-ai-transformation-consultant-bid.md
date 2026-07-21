@@ -1,9 +1,11 @@
 ---
-status: fleeting
+status: triaged
 kind: idea
 captured_at: 2026-07-17T15:19:00+07:00
 tags: []
 needs_review: false
+triaged_at: 2026-07-21T18:34:11+07:00
+triaged_to: "[[../../11c.Projects/BJP26110-RIC/README.md]]"
 ---
 
 New bid opportunity — consultant position for RIC (same client as [[BJP26110-RIC Initial investigation into Skill marketplace]]).

@@ -1,9 +1,11 @@
 ---
-status: fleeting
+status: triaged
 kind: idea
 captured_at: 2026-07-17T15:35:31+07:00
 tags: []
 needs_review: false
+triaged_at: 2026-07-21T18:34:11+07:00
+triaged_to: "[[../../11c.Projects/BJP26110-RIC/README.md]]"
 ---
 
 For the RIC AI transformation consultant bid, the current system is a Claude skill marketplace plus a usage dashboard. They already have a skill creation → self-refinement → publishing pipeline, but the missing seam is usage monitoring and improvement.
