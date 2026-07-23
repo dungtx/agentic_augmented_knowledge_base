@@ -1,11 +1,11 @@
 ---
-project: CDI-Cedar
+project: BGB26195-CDI
 client: Cedar (CDI)
 status: bid
 started: 2026-07-23
 ---
 
-# CDI-Cedar — ESG bill-reading platform
+# BGB26195-CDI — ESG bill-reading platform
 
 ## Customer goal
 

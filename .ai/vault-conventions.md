@@ -128,6 +128,10 @@ started: 2026-01-01
 closed: 2026-06-15  # only when status = closed
 ```
 
+### Project naming convention
+
+If the project has a **bid code** (e.g. `BGB26195`), the folder name must be `<BidCode>-<ClientSlug>` (e.g. `BGB26195-CDI`). If no code exists yet, use the client slug alone — the user will rename when the code is assigned. Always ask the user for the bid code during project kickoff.
+
 ### Project structure
 
 - `11c.Projects/<ProjectName>/README.md` — entry point (overview, status log, links to project notes)
@@ -141,6 +145,7 @@ closed: 2026-06-15  # only when status = closed
 - **Don't create subfolders** inside a project until volume clearly justifies it (user will say when).
 - **Update README status log** on every substantive project event.
 - **Project notes use readable filenames** — `mcp-internal-notes.md`, not date-prefixed (dates live in frontmatter or status log).
+- **Project folder naming:** `<BidCode>-<ClientSlug>` when a bid code is known; otherwise client slug alone.
 
 ### TODO — project skills (not yet built)
 

@@ -4,7 +4,7 @@ kind: idea
 captured_at: 2026-07-21T00:00:00+07:00
 tags: []
 needs_review: false
-triaged_to: "[[../../11c.Projects/CDI-Cedar/README.md]]"
+triaged_to: "[[../../11c.Projects/BGB26195-CDI/README.md]]"
 triaged_at: 2026-07-23T09:00:00+07:00
 ---
 

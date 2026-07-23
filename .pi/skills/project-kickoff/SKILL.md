@@ -123,7 +123,7 @@ If remaining questions exist, add: "Incomplete categories saved to `.ai/projects
 
 ## Project naming
 
-Derive `<ProjectName>` from the project code or client codename. Pattern: `<ProjectCode>-<ClientSlug>` (e.g., `BJP26110-RIC`). If no code exists, use the client slug alone. Kebab-case, no spaces.
+Derive `<ProjectName>` from the bid code or client codename. Pattern: `<BidCode>-<ClientSlug>` (e.g., `BGB26195-CDI`, `BJP26110-RIC`). **Always ask the user for the bid code** during kickoff — if one exists, the folder must use it. If no code exists yet, use the client slug alone and the user will rename when the code is assigned. Kebab-case, no spaces.
 
 If `11c.Projects/<ProjectName>/` already exists: this is a resume, not a new kickoff. Load `.ai/projects/<ProjectName>/remaining-questions.md` if present and continue from where the last session stopped.
 

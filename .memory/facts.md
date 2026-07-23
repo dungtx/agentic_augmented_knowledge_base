@@ -72,6 +72,7 @@ In rough priority order (full task briefs: `.memory/0003-state-of-system-and-pic
 - Never commit files you didn't create (W14)
 - One question at a time when grilling (mp-grilling)
 - Write skills per `mp-writing-great-skills` (`.pi/skills/` … `GLOSSARY.md`)
+- Project folder naming: `<BidCode>-<ClientSlug>` when a bid code exists (e.g., `BGB26195-CDI`, `BJP26110-RIC`); client slug alone otherwise
 
 ## Deeper reading
 
