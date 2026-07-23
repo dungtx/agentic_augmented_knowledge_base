@@ -1,4 +1,4 @@
-# Test quick shortcut creation script for quickly access links via launcher
+/# Test quick shortcut creation script for quickly access links via launcher
 
 ```
 #!/usr/bin/env bash
